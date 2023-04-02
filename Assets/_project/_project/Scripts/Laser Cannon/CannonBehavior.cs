@@ -6,7 +6,7 @@ public class CannonBehavior : MonoBehaviour {
 	public Transform m_cannonRot;
 	public Transform m_muzzle;
 	public GameObject m_shotPrefab;
-	public Texture2D m_guiTexture;
+	
 
 	// Use this for initialization
 	void Start () 
@@ -32,8 +32,5 @@ public class CannonBehavior : MonoBehaviour {
 		}
 	}
 
-	void OnGUI()
-	{
-		GUI.DrawTexture(new Rect(0f, 0f, m_guiTexture.width / 2, m_guiTexture.height / 2), m_guiTexture);
-	}
+	
 }
