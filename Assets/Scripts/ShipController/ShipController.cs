@@ -5,8 +5,8 @@ using UnityEngine;
 public class ShipController : MonoBehaviour
 {
     [SerializeField] ShipMovementInput _movementInput;
-   [SerializeField] [Range(1000f, 10000f)]
-   float _thrustForce = 7500f, 
+   [SerializeField] [Range(1000f, 100000f)]
+   public float _thrustForce = 7500f, 
         _pitchForce = 6000f, 
         _rollForce = 1000f, 
         _yawForce = 2000f;
